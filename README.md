@@ -6,17 +6,12 @@ against the "dtw" library for R.
 
 To get it to work:
 
-mex -setup
-
-mex -O dtw.c
+> mex -setup
+> mex -O dtw.c
 
 Example usage:
 
-x = rand(1, 10000);
-
-y = rand(1, 10000);
-
-d = dtw(x, y)
+> x = rand(1, 10000); y = rand(1, 10000); d = dtw(x, y)
 
 Note: x and y must be row vectors.
 
