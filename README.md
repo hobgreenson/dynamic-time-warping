@@ -6,8 +6,15 @@ against the "dtw" library for R.
 
 To get it to work:
 
-> mex -setup
-> mex -O dtw.c
+>> mex -setup
+>> mex -O dtw.c
+
+Example usage:
+>> x = rand(1, 10000)
+>> y = rand(1, 10000)
+>> d = dtw(x, y)
+
+Note: x and y must be row vectors.
 
 Sometimes mex is a pain in the ass to work with. I got it working on
 Mac OSX 10.9.5 by following instructions here:
