@@ -3,8 +3,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define INDEX(i,j,m) (i) * m + j
-
 static inline double min3(double a, double b, double c) {
     double min = a;
     min = (min < b) ? min : b;
