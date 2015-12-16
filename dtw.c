@@ -51,27 +51,27 @@ void mexFunction(int nlhs, mxArray *plhs[],
     double* d;   
     
     if (nrhs != 2) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:nrhs","Two inputs required.");
+        mexErrMsgIdAndTxt("DTW:nrhs","Two inputs required.");
     }
     
     if (nlhs != 1) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:nlhs","One output required.");
+        mexErrMsgIdAndTxt("DTW:nlhs","One output required.");
     }
     
     if (!mxIsDouble(prhs[0]) || mxIsComplex(prhs[0])) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:notDouble","Input matrix must be type double.");
+        mexErrMsgIdAndTxt("DTW:notDouble","Input matrix must be type double.");
     }
     
     if (!mxIsDouble(prhs[1]) || mxIsComplex(prhs[1])) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:notDouble","Input matrix must be type double.");
+        mexErrMsgIdAndTxt("DTW:notDouble","Input matrix must be type double.");
     }
     
     if (mxGetM(prhs[0]) != 1) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:notRowVector","Input must be a row vector.");
+        mexErrMsgIdAndTxt("DTW:notRowVector","Input must be a row vector.");
     }
     
     if (mxGetM(prhs[1]) != 1) {
-        mexErrMsgIdAndTxt("MyToolbox:arrayProduct:notRowVector","Input must be a row vector.");
+        mexErrMsgIdAndTxt("DTW:notRowVector","Input must be a row vector.");
     }
     
     x = mxGetPr(prhs[0]);
