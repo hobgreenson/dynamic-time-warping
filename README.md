@@ -1,0 +1,14 @@
+This is some C code to do vanilla dynamic time warping (DTW)
+using MATLAB. Only the distance between time series is returned.
+You can expect a 20000-40000X speed-up over equivalent MATLAB code
+because the DTW algorithm is not vecotrizable. This code has been tested
+against the "dtw" library for R.
+
+To get it to work:
+
+> mex -setup
+> mex -O dtw.c
+
+Sometimes mex is a pain in the ass to work with. I got it working on
+Mac OSX 10.9.5 by following instructions here:
+http://www.mathworks.com/matlabcentral/answers/246507-why-can-t-mex-find-a-supported-compiler-in-matlab-r2015b-after-i-upgraded-to-xcode-7
