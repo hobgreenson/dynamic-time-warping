@@ -1,8 +1,10 @@
-This is some C code to do vanilla dynamic time warping (DTW)
-using MATLAB. Only the distance between time series is returned.
-You can expect a 20000-40000X speed-up over equivalent MATLAB code
-because the DTW algorithm is not vecotrizable. This code has been tested
-against the "dtw" library for R.
+This is some C code to do vanilla (i.e. no global constraints) 
+dynamic time warping (DTW) using MATLAB. 
+
+Only the distance between time series is returned.
+You can expect a dramatic speed-up over equivalent MATLAB code
+because the DTW algorithm is not (easily) vecotrizable. 
+This code has been informally tested against the "dtw" library for R.
 
 To get it to work:
 
